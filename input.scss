@@ -1,16 +1,21 @@
 /*--- Variables --- */
 
-$main-font: 'Product Sans', sans-serif;
-$header-font: 'Product', sans-serif;
+$main-font: 'Roboto',
+sans-serif;
+$header-font: 'Playfair Display',
+serif;
 
-$nav-footer-spacing: 30px 0;
-$section-spacing: 20px 0;
+$nav-footer-spacing: 30px 10%;
+$section-spacing: 60px 10%;
 
 $navy: #264653;
 $green: #2A9D8F;
 $yellow: #E9C46A;
 $orange: #F4A261;
 $red: #E76F51;
+
+$beige:#fff6f0;
+$dark-beige: #dea783;
 
 
 /*--- Sections --- */
@@ -25,12 +30,13 @@ body {
 }
 
 .header {
-    background: $navy;
+    background: $beige;
+
 }
 
 .section {
     padding: $section-spacing;
-    overflow: auto;
+    overflow: hidden;
     text-align: center;
 }
 
@@ -38,36 +44,78 @@ body {
     margin: 0 auto;
     padding: 0;
     text-align: center;
-    background-color: $green;
+    background-color: $dark-beige;
     color: white;
     height: 500px;
     position: relative;
     
-    .left {
+    .two-column {
+        margin: 0 auto!important;
     }
-    
-    .right { 
+
+    .left {}
+
+    .right {
         padding-top: 12%;
     }
-    
+
 }
 
 .projects {
-    background-color: $orange;
+    background-color: $beige;
+
+    h2 {
+        color: $dark-beige;
+    }
+
+    h3,
+    p {
+        text-align: center !important;
+        padding: 0 40px;
+    }
+
+    .left,
+    .right,
+    .center {
+        background-color: white;
+        padding: 20px 0;
+        box-shadow: 0 8px 15px -8px black!important;
+    }
+
 }
 
 .about {
-    background-color: $red;
+    background-color: $dark-beige;
+    color: white;
+    
+    .about-box {
+        border: 3px solid white;
+        display: block;
+        margin-top: 40px;
+        height: 450px;
+    }
+    
+    .left {
+        border-right: 2px solid white;
+    }
+    
+    .right {
+        text-align: left!important;
+    }
 }
 
 .contact {
-    background-color: $yellow;
+    background-color: $beige;
+
+    h2 {
+        color: $dark-beige;
+    }
 }
 
 footer {
     padding: $nav-footer-spacing;
-    background-color: $navy;
-    color: white;
+    background-color: $beige;
+    color: $dark-beige;
     width: 100%;
     margin: 0 auto;
     overflow: auto;
@@ -81,29 +129,32 @@ footer {
 /* ---  Navigation --- */
 
 .primary-nav {
-    width: 80%;
+    width: 79%;
     overflow: auto;
     margin: 0 auto;
-    
+    color: $dark-beige;
+
     ul {
         color: white;
         list-style: none;
-        padding: 10px 0;
-        
+        padding: 20px 0 0;
+        color: $dark-beige;
+        font-weight: 700;
+
     }
-    
+
     li {
         display: inline-block;
         padding: 15px 20px;
     }
-    
+
     a:hover {
         opacity: .5;
     }
-    
+
     h1 {
         padding: 20px 0;
-        color: white;
+        color: $dark-beige;
     }
 }
 
@@ -112,7 +163,8 @@ footer {
 
 /* --- Buttons --- */
 
-#resume-btn, #projects-btn {
+#resume-btn,
+#projects-btn {
     background: none;
     border: 3px solid white;
     margin-top: 20px;
@@ -123,22 +175,19 @@ footer {
     font-size: inherit;
 }
 
-#projects-btn { 
+#projects-btn {
     margin-left: 3%;
 }
 
 
 /* --- Images --- */
 
-#logo {
-    
-}
+#logo {}
 
 #banner {
     width: 100%;
     padding: 0 auto;
     margin: 0 auto;
-    object-fit: fit;
 }
 
 
@@ -158,21 +207,21 @@ footer {
 }
 
 .two-column {
+    margin: 40px auto!important;
 
     .left {
         float: left;
-        width: 50%;
+        width: 48%;
     }
 
     .right {
         float: right;
-        width: 50%;
+        width: 48%;
     }
 }
 
 .three-column {
-    margin: 20px auto;
-    overflow: hidden;
+    margin: 40px auto;
 
     .left {
         float: left;
@@ -213,12 +262,12 @@ h2 {
 }
 
 h3 {
-    font-family: $header-font;
+    font-family: $main-font;
     font-size: 20px;
 }
 
 h4 {
-    font-family: $header-font;
+    font-family: $main-font;
     font-size: 18px;
     text-align: left;
     margin: 0;

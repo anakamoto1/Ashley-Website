@@ -1,15 +1,16 @@
 /*--- Variables --- */
 
-$main-font: 'Open Sans', sans-serif;
-$header-font: 'Oswald', sans-serif;
+$main-font: 'Product Sans', sans-serif;
+$header-font: 'Product', sans-serif;
 
 $nav-footer-spacing: 30px 0;
-$section-spacing: 20px auto;
+$section-spacing: 20px 0;
 
-$red: #C57B57;
-$pink: #F1AB86;
-$yellow: #F7DBA7;
-$blue: #9CAFB7;
+$navy: #264653;
+$green: #2A9D8F;
+$yellow: #E9C46A;
+$orange: #F4A261;
+$red: #E76F51;
 
 
 /*--- Sections --- */
@@ -20,28 +21,52 @@ body {
 }
 
 .wrapper {
-    width: 80%;
     margin: 0 auto;
 }
 
 .header {
-    background-color: black;
+    background: $navy;
 }
 
 .section {
-    margin: $section-spacing;
+    padding: $section-spacing;
+    overflow: auto;
+    text-align: center;
 }
 
 .banner {
     margin: 0 auto;
+    padding: 0;
     text-align: center;
-    background-color: lightgrey!important;
+    background-color: $green;
+    color: white;
     height: 500px;
+    position: relative;
+    
+    .left {
+    }
+    
+    .right { 
+        padding-top: 12%;
+    }
+    
+}
+
+.projects {
+    background-color: $orange;
+}
+
+.about {
+    background-color: $red;
+}
+
+.contact {
+    background-color: $yellow;
 }
 
 footer {
     padding: $nav-footer-spacing;
-    background-color: black;
+    background-color: $navy;
     color: white;
     width: 100%;
     margin: 0 auto;
@@ -57,13 +82,14 @@ footer {
 
 .primary-nav {
     width: 80%;
+    overflow: auto;
     margin: 0 auto;
+    
     ul {
-        display: inline-block;
-        float: right;
-        margin-top: 4%;
         color: white;
         list-style: none;
+        padding: 10px 0;
+        
     }
     
     li {
@@ -74,36 +100,73 @@ footer {
     a:hover {
         opacity: .5;
     }
+    
+    h1 {
+        padding: 20px 0;
+        color: white;
+    }
 }
 
 /* --- Forms --- */
 
 
+/* --- Buttons --- */
+
+#resume-btn, #projects-btn {
+    background: none;
+    border: 3px solid white;
+    margin-top: 20px;
+    padding: 5px 20px;
+    color: white;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#projects-btn { 
+    margin-left: 3%;
+}
+
+
 /* --- Images --- */
 
 #logo {
-    width: 20%;
-    height: auto;
+    
 }
 
 #banner {
-    
+    width: 100%;
+    padding: 0 auto;
+    margin: 0 auto;
+    object-fit: fit;
 }
 
 
 /* --- Columns --- */
 
-.two-column {
-    margin: 30px auto;
-
+.primary-nav {
     .left {
         float: left;
-        width: 45%;
+        width: 30%;
     }
 
     .right {
         float: right;
-        width: 45%;
+        width: 70%;
+        text-align: right;
+    }
+}
+
+.two-column {
+
+    .left {
+        float: left;
+        width: 50%;
+    }
+
+    .right {
+        float: right;
+        width: 50%;
     }
 }
 

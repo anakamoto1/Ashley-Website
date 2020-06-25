@@ -44,19 +44,19 @@ body {
     margin: 0 auto;
     padding: 0;
     text-align: center;
-    background-color: $dark-beige;
+    background-color: black;
     color: white;
-    height: 500px;
     position: relative;
-    
-    .two-column {
-        margin: 0 auto!important;
+
+    img {
+        opacity: .5;
     }
 
-    .left {}
-
-    .right {
-        padding-top: 12%;
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
 }
@@ -79,7 +79,7 @@ body {
     .center {
         background-color: white;
         padding: 20px 0;
-        box-shadow: 0 8px 15px -8px black!important;
+        box-shadow: 0 8px 15px -8px black !important;
     }
 
 }
@@ -87,20 +87,20 @@ body {
 .about {
     background-color: $dark-beige;
     color: white;
-    
+
     .about-box {
         border: 3px solid white;
         display: block;
         margin-top: 40px;
         height: 450px;
     }
-    
+
     .left {
         border-right: 2px solid white;
     }
-    
+
     .right {
-        text-align: left!important;
+        text-align: left !important;
     }
 }
 
@@ -116,12 +116,11 @@ footer {
     padding: $nav-footer-spacing;
     background-color: $beige;
     color: $dark-beige;
-    width: 100%;
     margin: 0 auto;
     overflow: auto;
 
     .two-column {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 }
@@ -207,7 +206,7 @@ footer {
 }
 
 .two-column {
-    margin: 40px auto!important;
+    margin: 40px auto !important;
 
     .left {
         float: left;

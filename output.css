@@ -23,16 +23,18 @@ body {
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  background-color: #dea783;
+  background-color: black;
   color: white;
-  height: 500px;
   position: relative;
 }
-.banner .two-column {
-  margin: 0 auto !important;
+.banner img {
+  opacity: 0.5;
 }
-.banner .right {
-  padding-top: 12%;
+.banner .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .projects {
@@ -82,12 +84,11 @@ footer {
   padding: 30px 10%;
   background-color: #fff6f0;
   color: #dea783;
-  width: 100%;
   margin: 0 auto;
   overflow: auto;
 }
 footer .two-column {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 

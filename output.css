@@ -220,4 +220,11 @@ a {
   margin: 0 auto;
 }
 
+/*--- Media --- */
+@media only screen and (max-width: 600px) {
+  #banner {
+    width: auto;
+  }
+}
+
 /*# sourceMappingURL=output.css.map */

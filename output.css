@@ -226,7 +226,7 @@ a {
 /*--- Media --- */
 @media only screen and (max-width: 660px) {
   #banner {
-    width: 800px;
+    width: 1000px;
   }
 
   h1 {

@@ -13,12 +13,26 @@
 
 </head>
 
+<script>
+    function add_number() {
+
+        var first_number = parseInt(document.getElementById("Text1").value);
+        var result = (first_number / 1.7);
+
+        document.getElementById("demo").innerHTML = "Congratulations, you are " + " " + Math.round(result) + " " + "Cheetos tall!";
+        
+        
+    }
+
+    
+</script>
+
 <body>
-    <div class="header">
+    <div class="header cheeto">
         <nav class="primary-nav">
             <div class="primary-nav left">
                 <a href="#">
-                    <h1>Ashley</h1>
+                    <img src="imgs/cheeto.png">
                 </a>
             </div>
             <div class="primary-nav right">
@@ -37,26 +51,20 @@
     </div>
     <div class="wrapper">
 
-        <div class="section banner">
-            <img id="banner" src="imgs/beach.jpg">
-            <div class="centered">
-                <h1> sry this page is ugly it's under construction... </h1>
-                <!--
-                <button id="resume-btn">Resume</button>
-                <button id="projects-btn">Projects</button>
--->
+        <div class="section cheeto">
+            <h2>Have you ever wondered how tall you are in cheetos?</h2>
+            <small>Enter your height in inches to learn how many cheetos you are equivalent to</small>
+
+            <div class="calc">
+                <input type="text" id="Text1" name="TextBox1" placeholder="Height">
+                <input type="button" name="clickbtn" value="Calculate" onclick="add_number()">
+                <div class="result">
+                    <p id="demo"></p>
+                </div>
             </div>
+            <hr>
+            <small>Disclaimer: This dude named Evan measured every single cheeto in a bag of cheetos to determine the average length of a cheeto.</small>
         </div>
 
     </div>
-
-    <footer>
-        <div class="two-column">
-            <div class="two-column left">
-                <p>© Copyright 2020</p>
-            </div>
-            <div class="two-column right">
-            </div>
-        </div>
-    </footer>
 </body></html>

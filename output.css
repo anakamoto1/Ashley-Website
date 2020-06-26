@@ -223,13 +223,71 @@ a {
   margin: 0 auto;
 }
 
+/*--- Cheeto --- */
+.cheeto {
+  background: #db9d4b !important;
+  color: white !important;
+}
+.cheeto a,
+.cheeto h1,
+.cheeto h2,
+.cheeto h3 {
+  color: white !important;
+}
+.cheeto img {
+  width: 60%;
+  margin-top: 10px;
+}
+.cheeto h2 {
+  margin: 10px 0 !important;
+}
+.cheeto .calc {
+  width: 30%;
+  margin: 40px auto !important;
+  padding: 40px 20px;
+  display: block;
+  border: 1px solid white !important;
+}
+.cheeto input[type=button] {
+  background-color: transparent;
+  color: white;
+  border: solid white 1px;
+  width: 30%;
+  float: right !important;
+  padding: 5px 15px;
+  font-weight: bold;
+}
+.cheeto input[type=text] {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid white 2px;
+  width: 50%;
+  float: left !important;
+  padding: 5px 15px;
+  text-align: center;
+}
+.cheeto placeholder {
+  color: white;
+}
+.cheeto input:focus {
+  outline: none !important;
+}
+.cheeto .result {
+  display: block;
+  float: clear;
+  padding-top: 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 /*--- Media --- */
 @media only screen and (max-width: 660px) {
   #banner {
     width: 1000px;
   }
 
-  h1 {
+  h1,
+h2 {
     font-size: 20px;
   }
 
@@ -258,6 +316,29 @@ a {
 
   ul {
     padding: none;
+  }
+
+  .cheeto img {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .cheeto .calc {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+  .cheeto input {
+    padding: 5px 10px !important;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .cheeto .calc {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+  .cheeto input {
+    padding: 5px 10px !important;
   }
 }
 
